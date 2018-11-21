@@ -90,7 +90,7 @@ public class PlayerList {
         BufferedReader reader = new BufferedReader(new FileReader(f));
         String line;
         String delimeter = ",";
-
+        reader.readLine();
         while ((line = reader.readLine()) != null) {
             String[] playerData = line.split(delimeter);
 
