@@ -107,7 +107,7 @@ public class PlayerList {
 
     public void saveToFile() throws IOException {
         FileWriter writer = new FileWriter(filename);
-        writer.write("Name,Matches Played,Wins,Team Goals,Goals Conceded");
+        writer.write("Name,Matches Played,Wins,Team Goals,Goals Conceded\n");
         for (Player p : playerList){
             writer.write(p.toString());
         }
