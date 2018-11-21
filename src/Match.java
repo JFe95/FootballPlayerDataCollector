@@ -47,7 +47,7 @@ public class Match {
     }
 
     public void saveToFile() throws IOException {
-        FileWriter writer = new FileWriter("Matches.csv",true);
+        FileWriter writer = new FileWriter("Matches.txt",true);
         writer.write(toString());
         writer.close();
     }
